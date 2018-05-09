@@ -1,0 +1,8 @@
+task=fileall
+Project=ELY
+Version=ELY_1_0_2
+repoDir=/home/zeck/bug/data/Wildfly/ELY/gitrepo
+sourceDir=/home/zeck/bug/data/Wildfly/ELY/sources/ELY_1_0_2
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Wildfly/ELY/
+bugReport=/home/zeck/bug/data/Wildfly/ELY/bugrepo/repository_merge/ELY_1_0_2.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Wildfly/ELY/

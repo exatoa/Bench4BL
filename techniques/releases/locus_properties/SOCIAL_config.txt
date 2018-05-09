@@ -1,0 +1,8 @@
+task=fileall
+Project=SOCIAL
+Version=SOCIAL_1_1_0
+repoDir=/home/zeck/bug/data/Spring/SOCIAL/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SOCIAL/sources/SOCIAL_1_1_0
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Spring/SOCIAL/bugrepo/repository/SOCIAL_1_1_0.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

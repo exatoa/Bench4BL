@@ -1,0 +1,8 @@
+task=fileall
+Project=COLLECTIONS
+Version=COLLECTIONS_3_2
+repoDir=/home/zeck/bug/data/Commons/COLLECTIONS/gitrepo
+sourceDir=/home/zeck/bug/data/Commons/COLLECTIONS/sources/COLLECTIONS_3_2
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Commons/COLLECTIONS/
+bugReport=/home/zeck/bug/data/Commons/COLLECTIONS/bugrepo/repository_merge/COLLECTIONS_3_2.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Commons/COLLECTIONS/

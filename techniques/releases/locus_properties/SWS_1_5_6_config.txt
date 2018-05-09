@@ -1,0 +1,8 @@
+task=fileall
+Project=SWS
+Version=SWS_1_5_6
+repoDir=/home/zeck/bug/data/Spring/SWS/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SWS/sources/SWS_1_5_6
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/SWS/
+bugReport=/home/zeck/bug/data/Spring/SWS/bugrepo/repository_merge/SWS_1_5_6.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/SWS/

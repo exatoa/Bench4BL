@@ -1,0 +1,8 @@
+task=fileall
+Project=SPR
+Version=all
+repoDir=/home/zeck/bug/data/Spring/SPR/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SPR/sources/SPR_4_2_5
+workingLoc=/home/zeck/bug/expresults/NewDataSingle_0503/Spring/SPR/
+bugReport=/home/zeck/bug/data/Spring/SPR/bugrepo/repository.xml
+changeOracle=/home/zeck/bug/expresults/NewDataSingle_0503/Spring/SPR/

@@ -1,0 +1,8 @@
+task=fileall
+Project=PDE
+Version=all
+repoDir=/home/zeck/bug/data/Previous/PDE/gitrepo
+sourceDir=/home/zeck/bug/data/Previous/PDE/sources/PDE_4_4
+workingLoc=/home/zeck/bug/expresults/PreviousData4/
+bugReport=/home/zeck/bug/data/Previous/PDE/bugrepo/repository.xml
+changeOracle=/home/zeck/bug/expresults/PreviousData4/

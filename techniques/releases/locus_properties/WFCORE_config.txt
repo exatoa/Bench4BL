@@ -1,0 +1,8 @@
+task=fileall
+Project=WFCORE
+Version=WFCORE_2_0_8
+repoDir=/home/zeck/bug/data/Wildfly/WFCORE/gitrepo
+sourceDir=/home/zeck/bug/data/Wildfly/WFCORE/sources/WFCORE_2_0_8
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Wildfly/WFCORE/bugrepo/repository/WFCORE_2_0_8.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

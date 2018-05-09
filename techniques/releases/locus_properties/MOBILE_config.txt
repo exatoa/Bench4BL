@@ -1,0 +1,8 @@
+task=fileall
+Project=MOBILE
+Version=MOBILE_1_0_1
+repoDir=/home/zeck/bug/data/Spring/MOBILE/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/MOBILE/sources/MOBILE_1_0_1
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Spring/MOBILE/bugrepo/repository/MOBILE_1_0_1.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

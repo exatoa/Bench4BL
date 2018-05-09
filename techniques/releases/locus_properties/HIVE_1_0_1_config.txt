@@ -1,0 +1,8 @@
+task=fileall
+Project=HIVE
+Version=HIVE_1_0_1
+repoDir=/home/zeck/bug/data/Apache/HIVE/gitrepo
+sourceDir=/home/zeck/bug/data/Apache/HIVE/sources/HIVE_1_0_1
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Apache/HIVE/
+bugReport=/home/zeck/bug/data/Apache/HIVE/bugrepo/repository_merge/HIVE_1_0_1.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Apache/HIVE/

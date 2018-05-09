@@ -1,0 +1,8 @@
+task=fileall
+Project=DATAREST
+Version=DATAREST_2_1_4
+repoDir=/home/zeck/bug/data/Spring/DATAREST/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/DATAREST/sources/DATAREST_2_1_4
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/DATAREST/
+bugReport=/home/zeck/bug/data/Spring/DATAREST/bugrepo/repository_merge/DATAREST_2_1_4.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/DATAREST/

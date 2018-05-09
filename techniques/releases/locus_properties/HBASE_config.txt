@@ -1,0 +1,9 @@
+task=fileall
+Project=HBASE
+Version=all
+MODE=append
+repoDir=/home/zeck/bug/data/Apache/HBASE/gitrepo
+sourceDir=/home/zeck/bug/data/Apache/HBASE/sources/HBASE_1_2_4
+workingLoc=/home/zeck/bug/expresults/NewDataSingle_Dist/
+bugReport=/home/zeck/bug/data/Apache/HBASE/bugrepo/repository/HBASE_0_94_6.xml
+changeOracle=/home/zeck/bug/expresults/NewDataSingle_Dist/

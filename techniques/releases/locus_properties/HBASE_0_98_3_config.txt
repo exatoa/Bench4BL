@@ -1,0 +1,8 @@
+task=fileall
+Project=HBASE
+Version=HBASE_0_98_3
+repoDir=/home/zeck/bug/data/Apache/HBASE/gitrepo
+sourceDir=/home/zeck/bug/data/Apache/HBASE/sources/HBASE_0_98_3
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Apache/HBASE/
+bugReport=/home/zeck/bug/data/Apache/HBASE/bugrepo/repository_merge/HBASE_0_98_3.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Apache/HBASE/

@@ -1,0 +1,8 @@
+task=fileall
+Project=CONFIGURATION
+Version=CONFIGURATION_1_7
+repoDir=/home/zeck/bug/data/Commons/CONFIGURATION/gitrepo
+sourceDir=/home/zeck/bug/data/Commons/CONFIGURATION/sources/CONFIGURATION_1_7
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Commons/CONFIGURATION/
+bugReport=/home/zeck/bug/data/Commons/CONFIGURATION/bugrepo/repository_merge/CONFIGURATION_1_7.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Commons/CONFIGURATION/

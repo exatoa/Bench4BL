@@ -1,0 +1,8 @@
+task=fileall
+Project=ANDROID
+Version=ANDROID_1_0_1
+repoDir=/home/zeck/bug/data/Spring/ANDROID/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/ANDROID/sources/ANDROID_1_0_1
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Spring/ANDROID/bugrepo/repository/ANDROID_1_0_1.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

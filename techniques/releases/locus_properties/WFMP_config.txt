@@ -1,0 +1,8 @@
+task=fileall
+Project=WFMP
+Version=WFMP_1_1_0
+repoDir=/home/zeck/bug/data/Wildfly/WFMP/gitrepo
+sourceDir=/home/zeck/bug/data/Wildfly/WFMP/sources/WFMP_1_1_0
+workingLoc=/home/zeck/bug/expresults/NewData/Wildfly/WFMP/
+bugReport=/home/zeck/bug/data/Wildfly/WFMP/bugrepo/repository/WFMP_1_1_0.xml
+changeOracle=/home/zeck/bug/expresults/NewData/Wildfly/WFMP/

@@ -1,0 +1,8 @@
+task=fileall
+Project=SWARM
+Version=SWARM_2016_11_0
+repoDir=/home/zeck/bug/data/Wildfly/SWARM/gitrepo
+sourceDir=/home/zeck/bug/data/Wildfly/SWARM/sources/SWARM_2016_11_0
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Wildfly/SWARM/bugrepo/repository/SWARM_2016_11_0.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

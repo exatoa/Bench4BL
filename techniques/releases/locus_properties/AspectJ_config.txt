@@ -1,0 +1,8 @@
+task=fileall
+Project=AspectJ
+Version=all
+repoDir=/home/zeck/bug/data/Previous/AspectJ/gitrepo
+sourceDir=/home/zeck/bug/data/Previous/AspectJ/sources/AspectJ_1_6_0_M2
+workingLoc=/home/zeck/bug/expresults/PreviousData4/
+bugReport=/home/zeck/bug/data/Previous/AspectJ/bugrepo/Locus_repository.xml
+changeOracle=/home/zeck/bug/expresults/PreviousData4/

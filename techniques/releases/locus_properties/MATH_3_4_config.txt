@@ -1,0 +1,8 @@
+task=fileall
+Project=MATH
+Version=MATH_3_4
+repoDir=/home/zeck/bug/data/Commons/MATH/gitrepo
+sourceDir=/home/zeck/bug/data/Commons/MATH/sources/MATH_3_4
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Commons/MATH/
+bugReport=/home/zeck/bug/data/Commons/MATH/bugrepo/repository_merge/MATH_3_4.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Commons/MATH/

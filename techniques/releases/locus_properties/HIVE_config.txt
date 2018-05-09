@@ -1,0 +1,9 @@
+task=fileall
+Project=HIVE
+Version=all
+MODE=append
+repoDir=/home/zeck/bug/data/Apache/HIVE/gitrepo
+sourceDir=/home/zeck/bug/data/Apache/HIVE/sources/HIVE_2_1_0
+workingLoc=/home/zeck/bug/expresults/NewDataSingle_Dist2/Apache/HIVE/
+bugReport=/home/zeck/bug/data/Apache/HIVE/bugrepo/repository/HIVE_2_1_0.xml
+changeOracle=/home/zeck/bug/expresults/NewDataSingle_Dist2/Apache/HIVE/

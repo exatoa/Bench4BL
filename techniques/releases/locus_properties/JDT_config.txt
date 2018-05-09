@@ -1,0 +1,8 @@
+task=fileall
+Project=JDT
+Version=all
+repoDir=/home/zeck/bug/data/Previous/JDT/gitrepo
+sourceDir=/home/zeck/bug/data/Previous/JDT/sources/JDT_4_5
+workingLoc=/home/zeck/bug/expresults/PreviousData/
+bugReport=/home/zeck/bug/data/Previous/JDT/bugrepo/repository.xml
+changeOracle=/home/zeck/bug/expresults/PreviousData/

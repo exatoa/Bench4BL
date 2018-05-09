@@ -1,0 +1,8 @@
+task=fileall
+Project=ZXing
+Version=all
+repoDir=/home/zeck/bug/data/Previous/ZXing/gitrepo
+sourceDir=/home/zeck/bug/data/Previous/ZXing/sources/ZXing_1_6
+workingLoc=/home/zeck/bug/expresults/PreviousData4/
+bugReport=/home/zeck/bug/data/Previous/ZXing/bugrepo/repository.xml
+changeOracle=/home/zeck/bug/expresults/PreviousData4/

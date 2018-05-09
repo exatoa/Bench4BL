@@ -1,0 +1,8 @@
+task=fileall
+Project=ROO
+Version=ROO_1_2_1
+repoDir=/home/zeck/bug/data/Spring/ROO/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/ROO/sources/ROO_1_2_1
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/ROO/
+bugReport=/home/zeck/bug/data/Spring/ROO/bugrepo/repository_merge/ROO_1_2_1.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/ROO/

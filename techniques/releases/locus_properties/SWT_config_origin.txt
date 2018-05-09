@@ -1,0 +1,8 @@
+task=fileall
+Project=SWT
+Version=all
+repoDir=/home/zeck/bug/data/Previous/SWT2/gitrepo
+sourceDir=/home/zeck/bug/data/Previous/SWT2/sources/SWT_3138
+workingLoc=/home/zeck/bug/expresults/PreviousData6/
+bugReport=/home/zeck/bug/data/Previous/SWT2/bugrepo/repository.xml
+changeOracle=/home/zeck/bug/expresults/PreviousData6/

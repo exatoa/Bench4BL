@@ -1,0 +1,8 @@
+task=fileall
+Project=CAMEL
+Version=CAMEL_2_14_1
+repoDir=/home/zeck/bug/data/Apache/CAMEL/gitrepo
+sourceDir=/home/zeck/bug/data/Apache/CAMEL/sources/CAMEL_2_14_1
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Apache/CAMEL/
+bugReport=/home/zeck/bug/data/Apache/CAMEL/bugrepo/repository_merge/CAMEL_2_14_1.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Apache/CAMEL/

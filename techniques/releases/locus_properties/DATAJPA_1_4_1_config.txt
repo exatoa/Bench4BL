@@ -1,0 +1,8 @@
+task=fileall
+Project=DATAJPA
+Version=DATAJPA_1_4_1
+repoDir=/home/zeck/bug/data/Spring/DATAJPA/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/DATAJPA/sources/DATAJPA_1_4_1
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/DATAJPA/
+bugReport=/home/zeck/bug/data/Spring/DATAJPA/bugrepo/repository_merge/DATAJPA_1_4_1.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/DATAJPA/

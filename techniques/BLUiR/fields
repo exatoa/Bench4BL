@@ -1,0 +1,14 @@
+<parameters>
+    <field>
+        <name>class</name>
+    </field>
+    <field>
+        <name>method</name>
+    </field>
+    <field>
+        <name>identifier</name>
+    </field>
+    <field>
+        <name>comments</name>
+    </field>
+</parameters>

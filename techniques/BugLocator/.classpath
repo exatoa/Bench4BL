@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="libs/args4j-2.0.6.jar"/>
+	<classpathentry kind="lib" path="libs/contenttype-3.2.0-v20060603.jar"/>
+	<classpathentry kind="lib" path="libs/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="libs/lucene-core-2.9.4.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.13-bin.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.core.jobs_3.4.1.R34x_v20081128.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.core.resources_3.4.2.R34x_v20090126.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.core.runtime_3.4.0.v20080512.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.jdt.core_3.4.4.v_894_R34x.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.jface_3.4.1.M20080827-2000.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.osgi_3.4.2.R34x_v20080826-1230.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.text_3.4.0.v20080605-1800.jar"/>
+	<classpathentry kind="lib" path="libs/preferences-3.2.100-v20070522.jar"/>
+	<classpathentry kind="lib" path="libs/wvtool.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

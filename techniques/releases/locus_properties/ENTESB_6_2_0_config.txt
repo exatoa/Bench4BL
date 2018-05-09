@@ -1,0 +1,8 @@
+task=fileall
+Project=ENTESB
+Version=ENTESB_6_2_0
+repoDir=/home/zeck/bug/data/JBoss/ENTESB/gitrepo
+sourceDir=/home/zeck/bug/data/JBoss/ENTESB/sources/ENTESB_6_2_0
+workingLoc=/home/zeck/bug/expresults/DupData_tran/JBoss/ENTESB/
+bugReport=/home/zeck/bug/data/JBoss/ENTESB/bugrepo/repository_merge/ENTESB_6_2_0.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/JBoss/ENTESB/

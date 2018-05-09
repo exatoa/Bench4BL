@@ -1,0 +1,8 @@
+task=fileall
+Project=SWF
+Version=SWF_1_0_1
+repoDir=/home/zeck/bug/data/Spring/SWF/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SWF/sources/SWF_1_0_1
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/SWF/
+bugReport=/home/zeck/bug/data/Spring/SWF/bugrepo/repository_merge/SWF_1_0_1.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/SWF/

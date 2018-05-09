@@ -1,0 +1,8 @@
+task=fileall
+Project=BATCH
+Version=BATCH_2_1_0
+repoDir=/home/zeck/bug/data/Spring/BATCH/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/BATCH/sources/BATCH_2_1_0
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/BATCH/
+bugReport=/home/zeck/bug/data/Spring/BATCH/bugrepo/repository_merge/BATCH_2_1_0.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/BATCH/

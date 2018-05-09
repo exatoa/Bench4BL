@@ -1,0 +1,8 @@
+task=fileall
+Project=DATAGRAPH
+Version=DATAGRAPH_3_4_6
+repoDir=/home/zeck/bug/data/Spring/DATAGRAPH/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/DATAGRAPH/sources/DATAGRAPH_3_4_6
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/DATAGRAPH/
+bugReport=/home/zeck/bug/data/Spring/DATAGRAPH/bugrepo/repository_merge/DATAGRAPH_3_4_6.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/DATAGRAPH/

@@ -1,0 +1,8 @@
+task=fileall
+Project=WFLY
+Version=WFLY_8_0_0
+repoDir=/home/zeck/bug/data/Wildfly/WFLY/gitrepo
+sourceDir=/home/zeck/bug/data/Wildfly/WFLY/sources/WFLY_8_0_0
+workingLoc=/home/zeck/bug/expresults/NewData3/Wildfly/WFLY/
+bugReport=/home/zeck/bug/data/Wildfly/WFLY/bugrepo/repository/WFLY_8_0_0.xml
+changeOracle=/home/zeck/bug/expresults/NewData3/Wildfly/WFLY/

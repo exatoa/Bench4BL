@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/changedistiller-0.0.1-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math3-3.5.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.8.2.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.contenttype_3.4.200.v20140207-1251.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.jobs_3.6.1.v20141014-1248.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.resources_3.9.1.v20140825-1431.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.runtime_3.10.0.v20140318-2214.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.equinox.preferences_3.5.200.v20140224-1527.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.compiler.apt_1.1.0.v20150122-0735.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.compiler.tool_1.0.300.v20150114-1827.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.core_3.10.2.v20150120-1634.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jface_3.10.2.v20141021-1035.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.osgi_3.8.2.v20130124-134944.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.osgi.source_3.8.2.v20130124-134944.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.osgi.util_3.3.0.v20131023-1243.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.text_3.5.300.v20130515-1451.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

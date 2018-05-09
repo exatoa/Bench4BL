@@ -1,0 +1,8 @@
+task=fileall
+Project=DATAREDIS
+Version=DATAREDIS_1_7_1
+repoDir=/home/zeck/bug/data/Spring/DATAREDIS/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/DATAREDIS/sources/DATAREDIS_1_7_1
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/DATAREDIS/
+bugReport=/home/zeck/bug/data/Spring/DATAREDIS/bugrepo/repository_merge/DATAREDIS_1_7_1.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/DATAREDIS/

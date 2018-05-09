@@ -1,0 +1,8 @@
+task=fileall
+Project=DATAMONGO
+Version=DATAMONGO_1_5_2
+repoDir=/home/zeck/bug/data/Spring/DATAMONGO/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/DATAMONGO/sources/DATAMONGO_1_5_2
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/DATAMONGO/
+bugReport=/home/zeck/bug/data/Spring/DATAMONGO/bugrepo/repository_merge/DATAMONGO_1_5_2.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/DATAMONGO/

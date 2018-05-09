@@ -1,0 +1,8 @@
+task=fileall
+Project=SWARM
+Version=SWARM_2016_9
+repoDir=/home/zeck/bug/data/Wildfly/SWARM/gitrepo
+sourceDir=/home/zeck/bug/data/Wildfly/SWARM/sources/SWARM_2016_9
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Wildfly/SWARM/
+bugReport=/home/zeck/bug/data/Wildfly/SWARM/bugrepo/repository_merge/SWARM_2016_9.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Wildfly/SWARM/

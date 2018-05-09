@@ -1,0 +1,8 @@
+task=fileall
+Project=JBMETA
+Version=JBMETA_8_0_0
+repoDir=/home/zeck/bug/data/JBoss/JBMETA/gitrepo
+sourceDir=/home/zeck/bug/data/JBoss/JBMETA/sources/JBMETA_8_0_0
+workingLoc=/home/zeck/bug/expresults/DupData_tran/JBoss/JBMETA/
+bugReport=/home/zeck/bug/data/JBoss/JBMETA/bugrepo/repository_merge/JBMETA_8_0_0.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/JBoss/JBMETA/

@@ -1,0 +1,8 @@
+task=fileall
+Project=COMPRESS
+Version=COMPRESS_1_8_1
+repoDir=/home/zeck/bug/data/Commons/COMPRESS/gitrepo
+sourceDir=/home/zeck/bug/data/Commons/COMPRESS/sources/COMPRESS_1_8_1
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Commons/COMPRESS/bugrepo/repository/COMPRESS_1_8_1.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

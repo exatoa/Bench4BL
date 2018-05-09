@@ -1,0 +1,8 @@
+task=fileall
+Project=BATCHADM
+Version=BATCHADM_1_2_1
+repoDir=/home/zeck/bug/data/Spring/BATCHADM/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/BATCHADM/sources/BATCHADM_1_2_1
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Spring/BATCHADM/bugrepo/repository/BATCHADM_1_2_1.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

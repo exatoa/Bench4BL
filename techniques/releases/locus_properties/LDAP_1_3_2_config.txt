@@ -1,0 +1,8 @@
+task=fileall
+Project=LDAP
+Version=LDAP_1_3_2
+repoDir=/home/zeck/bug/data/Spring/LDAP/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/LDAP/sources/LDAP_1_3_2
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/LDAP/
+bugReport=/home/zeck/bug/data/Spring/LDAP/bugrepo/repository_merge/LDAP_1_3_2.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/LDAP/

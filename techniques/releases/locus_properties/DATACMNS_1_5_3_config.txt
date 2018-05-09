@@ -1,0 +1,8 @@
+task=fileall
+Project=DATACMNS
+Version=DATACMNS_1_5_3
+repoDir=/home/zeck/bug/data/Spring/DATACMNS/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/DATACMNS/sources/DATACMNS_1_5_3
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/DATACMNS/
+bugReport=/home/zeck/bug/data/Spring/DATACMNS/bugrepo/repository_merge/DATACMNS_1_5_3.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/DATACMNS/

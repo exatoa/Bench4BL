@@ -1,0 +1,8 @@
+task=fileall
+Project=AMQP
+Version=AMQP_1_4_5
+repoDir=/home/zeck/bug/data/Spring/AMQP/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/AMQP/sources/AMQP_1_4_5
+workingLoc=/home/zeck/bug/expresults/DupData/Spring/AMQP/
+bugReport=/home/zeck/bug/data/Spring/AMQP/bugrepo/repository_dup/AMQP_1_4_5.xml
+changeOracle=/home/zeck/bug/expresults/DupData/Spring/AMQP/

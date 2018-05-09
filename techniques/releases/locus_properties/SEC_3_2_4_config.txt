@@ -1,0 +1,8 @@
+task=fileall
+Project=SEC
+Version=SEC_3_2_4
+repoDir=/home/zeck/bug/data/Spring/SEC/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SEC/sources/SEC_3_2_4
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/SEC/
+bugReport=/home/zeck/bug/data/Spring/SEC/bugrepo/repository_merge/SEC_3_2_4.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/SEC/

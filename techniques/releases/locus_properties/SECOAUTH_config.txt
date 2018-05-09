@@ -1,0 +1,8 @@
+task=fileall
+Project=SECOAUTH
+Version=SECOAUTH_1_0_3
+repoDir=/home/zeck/bug/data/Spring/SECOAUTH/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SECOAUTH/sources/SECOAUTH_1_0_3
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Spring/SECOAUTH/bugrepo/repository/SECOAUTH_1_0_3.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

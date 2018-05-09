@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\Projects\IRBLSensitivity\techniques\BLIA"/>
+		<item value="D:\Projects\IRBLSensitivity\techniques\AmaLgam"/>
+		<item value="D:\Projects\IRBLSensitivity\techniques\BLUiR"/>
+		<item value="D:\Projects\IRBLSensitivity\techniques\Locus"/>
+		<item value="D:\Projects\IRBLSensitivity\techniques\BRTracer"/>
+		<item value="D:\Projects\IRBLSensitivity\techniques\BugLocator"/>
+	</list>
+</section>

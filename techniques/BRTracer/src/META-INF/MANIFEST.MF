@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Class-Path: org.eclipse.core.runtime_3.4.0.v20080512.jar org.eclipse.c
+ ore.resources_3.4.2.R34x_v20090126.jar args4j-2.0.6.jar org.eclipse.o
+ sgi_3.4.2.R34x_v20080826-1230.jar org.eclipse.core.jobs_3.4.1.R34x_v2
+ 0081128.jar contenttype-3.2.0-v20060603.jar org.eclipse.equinox.commo
+ n_3.4.0.v20080421-2006.jar preferences-3.2.100-v20070522.jar dom4j-1.
+ 6.1.jar wvtool.jar org.eclipse.text_3.4.0.v20080605-1800.jar org.ecli
+ pse.jdt.core_3.4.4.v_894_R34x.jar org.eclipse.jface_3.4.1.M20080827-2
+ 000.jar mysql-connector-java-5.1.13-bin.jar lucene-core-2.9.4.jar
+Main-Class: BRTracer
+

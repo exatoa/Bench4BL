@@ -1,0 +1,8 @@
+task=fileall
+Project=SOCIALLI
+Version=SOCIALLI_1_0_0
+repoDir=/home/zeck/bug/data/Spring/SOCIALLI/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SOCIALLI/sources/SOCIALLI_1_0_0
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Spring/SOCIALLI/bugrepo/repository/SOCIALLI_1_0_0.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

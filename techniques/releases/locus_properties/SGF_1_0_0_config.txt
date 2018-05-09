@@ -1,0 +1,8 @@
+task=fileall
+Project=SGF
+Version=SGF_1_0_0
+repoDir=/home/zeck/bug/data/Spring/SGF/gitrepo
+sourceDir=/home/zeck/bug/data/Spring/SGF/sources/SGF_1_0_0
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Spring/SGF/
+bugReport=/home/zeck/bug/data/Spring/SGF/bugrepo/repository_merge/SGF_1_0_0.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Spring/SGF/

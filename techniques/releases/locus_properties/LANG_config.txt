@@ -1,0 +1,8 @@
+task=fileall
+Project=LANG
+Version=LANG_3_4
+repoDir=/home/zeck/bug/data/Commons/LANG/gitrepo
+sourceDir=/home/zeck/bug/data/Commons/LANG/sources/LANG_3_4
+workingLoc=/home/zeck/bug/expresults/NewData/
+bugReport=/home/zeck/bug/data/Commons/LANG/bugrepo/repository/LANG_3_4.xml
+changeOracle=/home/zeck/bug/expresults/NewData/

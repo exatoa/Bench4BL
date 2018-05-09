@@ -1,0 +1,8 @@
+task=fileall
+Project=CODEC
+Version=CODEC_1_10
+repoDir=/home/zeck/bug/data/Commons/CODEC/gitrepo
+sourceDir=/home/zeck/bug/data/Commons/CODEC/sources/CODEC_1_10
+workingLoc=/home/zeck/bug/expresults/DupData_tran/Commons/CODEC/
+bugReport=/home/zeck/bug/data/Commons/CODEC/bugrepo/repository_merge/CODEC_1_10.xml
+changeOracle=/home/zeck/bug/expresults/DupData_tran/Commons/CODEC/
