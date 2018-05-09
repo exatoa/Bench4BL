@@ -1,6 +1,6 @@
 # Bench4BL
-Bench4BL is a collection of set of bug reports and git repository for Fault Localization experiment. This collection has 10,017 bug reports collected from 51 Subjects and each bug report is mapped to the source code of the corresponding version. Therefore, we can support your detail experiment as giving this version mapping information. And we also support you that you can experiment with other Subjects as offering scripts used to make this collection.
-This document explains how to use this benchmark to your experiment and how reproduce the result of our paper titled IR-based Bug Localization: Reproducibility Study on the Performance of State-of-the-Art Approaches.
+Bench4BL is a collection of bug reports and corresponding source code files to fix a bug specified by each bug report to support bug localization research. This collection contains 10,017 bug reports collected from 51 open source projects and each bug report is mapped with the source code files of the corresponding version. Therefore, this dataset can help evaluate bug localization techniques with a large number of subjects.
+This document describes how to use this dataset and how to reproduce the result of our paper below. Please cite the following paper if you utilize the dataset.
 
 ```
 @inproceedings{bench4bl,
