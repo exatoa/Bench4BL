@@ -15,7 +15,6 @@ class Subjects(object):
 	__name__ = u'Subjects'
 	root = u'/mnt/exp/Bug/data/'
 	root_result = u'/mnt/exp/Bug/expresults/'
-	root_feature = u'/mnt/exp/Bug/features/'
 	techniques = ['BugLocator', 'BRTracer', 'BLUiR', 'AmaLgam', 'BLIA', 'Locus']
 	groups = ['Apache', 'Commons', 'JBoss', 'Wildfly', 'Spring']
 	projects = {
@@ -173,8 +172,3 @@ class Subjects(object):
 	def getPath_result_folder(self, _type, _group, _project):
 		return os.path.join(self.root_result, _type, _group, _project)
 
-	def getPath_featurebase(self, _group, _project):
-		return os.path.join(self.root_feature, _group, _project)
-
-	def getPath_featureroot(self):
-		return self.root_feature
