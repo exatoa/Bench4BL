@@ -104,7 +104,8 @@ We describe scripts folder briefly and list up each step of all procedures.
 
 ### Clone this repository
 Clone the repository by using the following command. (We cloned into the "Bench" directory.)
-> $ git clone https://github.com/exatoa/Bench4BL.git Bench <br />
+> $ git clone https://github.com/exatoa/Bench4BL.git Bench
+
 If you don't have git, please install git first using following commands.
 > $ sudo apt-get update <br />
 > $ sudo apt-get install git <br />
