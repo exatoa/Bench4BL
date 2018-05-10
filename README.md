@@ -123,7 +123,7 @@ After downloaded, unpack all archives by using the unpacking.sh script.
 > Bench/_archives/Apache$ wget -O CAMEL.tar "https://sourceforge.net/projects/irblsensitivity/files/Apache/CAMEL.tar" <br />
 > ....work recursively.... <br />
 > Bench$ mkdir data <br />
-> Bemch$ chmod +x unpacking.sh
+> Bemch$ chmod +x unpacking.sh <br />
 > Bench$ ./unpacking.sh _archives data
 
 The last command unpacks all archive files in '_archives' folder into 'data' folder as keeping the original directory structures.
