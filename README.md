@@ -78,19 +78,18 @@ Please refer to "Getting Started" for more details.
 
 
 ### Repository Directory Structure
- - **techniques**: This folder includes source codes and executable files of previous techniques such as BugLocator and Locus. We revised the source codes to output result with same format and improved their performance. All executable files are stored in a folder "techniques/releases"
- - **analysis**: The execution result of previous techniques which is refind for scripts in forlder "scripts > analysis".
- - **scripts**: Python scripts to prepare resources for Fault Localization experiment and execute previous techniques and organize the results.
- - **packing.sh**: Shell script to pack resource data per each subject.
- - **unpacking.sh**: Shell script to unpack resource data per each subject.
+ - **techniques**: This folder includes source code and executable files of previous techniques such as BugLocator and Locus. We revised the source code files so that every technique produces results with the identical format. All executable files are stored in the folder "techniques/releases"
+ - **analysis**: The execution result of previous techniques, which are refind for scripts in forlder "scripts > analysis".
+ - **scripts**: Python scripts to prepare resources for bug localization experiments and to execute previous techniques.
+ - **packing.sh**: Shell script to pack resources for each subject.
+ - **unpacking.sh**: Shell script to unpack resources for each subject.
 
 
 
 
 # Getting Started
-This section describes all procedures of use this benchmarks. The procedures include setting experiment environment, creating bug repository and checking out source codes of specific versions. The step of creating bug repository can be skipped when you use archives that you downloaded from the above table.
-All the commands are written base on Ubuntu 16.04 LTS because all the experiments are executed in this environment.
-We describe scripts folder briefly and list up each step of all procedures.
+This section describes all procedures of using this benchmarks. The procedures include setting experiment environments, creating a bug repository and checking out source code files of a specific version. The step of creating a bug repository can be skipped if you use archives listed in the above table.
+All the procedures are tested on Ubuntu 16.04 LTS.
 
 
     ## Scripts Directory Structure ##
@@ -175,8 +174,8 @@ In the file 'Bench/scripts/commons/Subject.py', there are variables that stores 
 
 
 ### Version Information
-We selected specific versions for each Subject and saved into 'versions.txt' according to the Subject folder. The file is in JSON format and we used a dictionary to save information. A top-level key means a Subject name which is correspond written in Subjects.py. The selected versions are also listed using dictionary structure. The key text is version name which means you want to represent it and the value test is tag name written in git repository.
-For example, Let you want to store CODEC Subject's version information. You could write like below JSON text and save it in 'Bench/data/Commons/CODEC/versions.txt'. We offer the selected versions in the archieves. If you want to use the versions that we selected, you don't need to change version information files.
+We selected specific versions for each subject and saved into 'versions.txt'. The file is in JSON format and we used a dictionary to save information. Top-level keys mean a subject name corresponding to "Subjects.py". The selected versions are also listed in dictionary structure. The key text is version name which means you want to represent it and the value test is tag name written in git repository.
+For example, assume that you want to store CODEC Subject's version information. You prepare JSON code and save it in 'Bench/data/Commons/CODEC/versions.txt'. We offer the selected versions in the archieves. If you want to use a version that we selected, it is not necessary to change version information files.
 
     {
         "CODEC":{
