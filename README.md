@@ -112,9 +112,7 @@ If you don't have git, please install git first using following commands.
 
     
 ### Download subjects' archives.
-Download all subjects from the Subjects table and save them in the cloned repository path. If you need some of all subjects, you can download some of them.
-We saved them into the 'Bench/_archives' directory. To use our scripts, we recommend that each subject stores in the group directory to which it belongs.
-After downloaded, unpack all archives by using the unpacking.sh script.
+Download all subjects from the Subjects table and save them in the cloned repository path. We saved them into the 'Bench/_archives' directory. To use our scripts, we recommend that each subject stores in the group directory to which it belongs. After downloaded, unpack all archives by using the unpacking.sh script. If you don't need all subjects, you can download some of them.
 > $ cd Bench <br />
 > Bench$ mkdir _archives <br />
 > Bench$ cd _archives <br />
@@ -126,7 +124,7 @@ After downloaded, unpack all archives by using the unpacking.sh script.
 > Bemch$ chmod +x unpacking.sh <br />
 > Bench$ ./unpacking.sh _archives data
 
-The last command unpacks all archive files in '_archives' folder into 'data' folder as keeping the original directory structures.
+The last command unpacks all archive files in '_archives' folder into 'data' folder as keeping the directory structures in '_archives'.
 
 
 ### Install python
@@ -152,12 +150,12 @@ You can install using following commnad.
 > $ pip install numpy scipy matplotlib pytz GitPython bs4 xlswriter python-dateutil<br />
 
 ### Update PATH information (Editing script code)
-In the file scripts/commons/Subject.py, there are variables that stores a resource PATH information as a string and subject informations. To use our scripts, you should change the variables properly.
+In the file 'Bench/scripts/commons/Subject.py', there are variables that stores a resource PATH information as a string and subject informations. To use our scripts, you should change the variables properly. You should use absolute PATH to update the PATH information and use the same subject name with subject Directory name for the subject information.
 
     class Subjects(object):
         ...
-        root = u'/mnt/exp/Bug/data/'
-        root_result = u'/mnt/exp/Bug/expresults/'
+        root = u'/mnt/exp/Bench/data/'
+        root_result = u'/mnt/exp/Bench/expresults/'
         techniques = ['BugLocator', 'BRTracer', 'BLUiR', 'AmaLgam', 'BLIA', 'Locus']
         groups = ['Apache', 'Commons', 'JBoss', 'Wildfly', 'Spring']
         projects = {
@@ -171,14 +169,14 @@ In the file scripts/commons/Subject.py, there are variables that stores a resour
 
 * root : The directory that you unpacked downloaded archives.
 * root_result : The directory that the previous techniques' result will be stored.
-* techniques : The previous technique names.
-* groups : The group names that you want to test.
-* projects : The subject names that you want to test. Each subject name should be classified into specific group name.
+* techniques : The list of previous technique names.
+* groups : The list of group names that you want to test.
+* projects : The list of subject names that you want to test. Each subject name should be classified into specific group name.
 
 
 ### Version Information
-We selected specific versions for each Subject and saved into versions.txt according to the Subject folder. The file is in JSON format and we used a dictionary to save information. A top-level key means a Subject name which is correspond written in Subjects.py. The selected versions are also listed using dictionary structure. The key text is version name which means you want to represent it and the value test is tag name written in git repository.
-For example, Let you want to store CODEC Subject's version information. You could write like below JSON text and save it in 'Bench/data/Commons/CODEC/versions.txt'. We offer the selected versions in the archieves. If you want to use versions that we selected, you don't need to change version information files.
+We selected specific versions for each Subject and saved into 'versions.txt' according to the Subject folder. The file is in JSON format and we used a dictionary to save information. A top-level key means a Subject name which is correspond written in Subjects.py. The selected versions are also listed using dictionary structure. The key text is version name which means you want to represent it and the value test is tag name written in git repository.
+For example, Let you want to store CODEC Subject's version information. You could write like below JSON text and save it in 'Bench/data/Commons/CODEC/versions.txt'. We offer the selected versions in the archieves. If you want to use the versions that we selected, you don't need to change version information files.
 
     {
         "CODEC":{
@@ -197,8 +195,7 @@ For example, Let you want to store CODEC Subject's version information. You coul
 
 
 ### Inflate the source codes.
-We used multiple versions of source code for the experiment. Since the provided archives have only a git repository, you need to inflate also. The script launcher_GitInflator.py clones a git repositories and inflates it into the multiple versions which you selected.
-> Bench$ cd scripts <br />
+We used multiple versions of source code for the experiment. Since the provided archives have only a git repository, you need to check out repositories according to versions that you selected above. The script launcher_GitInflator.py clones a git repositories and checks it out into the multiple versions which you selected. These source codes are stored into a folder 'Bench/data/[Group Name]/[Project Name]/sources/' automatically.
 > Bench/scripts$ python launcher_GitInflator.py <br />
 
     
@@ -210,36 +207,13 @@ We need to build a repository for the bug reports with pre-crawled bug reports. 
 
     
 ### Update count information of bug and source codes.
-The script of Counting.py makes a count information for bug and source code. The result will be stored bugs.txt, sources.txt and answers.txt in each subject's folder.
+The script of Counting.py makes a count information for bug and source code. The result will be stored 'bugs.txt', 'sources.txt' and 'answers.txt' in each subject's folder.
 > Bench/scripts$ python Counting.py <br />
 
 
 # Execute Previous Techniques
-* To get the result of each technique, you can use scripts/launcher_Tool.py.
-* Preparing step
-    - You need to set the PATHs and JavaOptions in the launcher_Tool.py file.
-    - Open the file, launcher_Tool.py and check the following variables 
-    - ProgramPATH: Set the directory path which contains the release files of the IRBL techniques. (ex. u'~/Bench/techniques/releases/')
-    - OutputPATH: Set the result path to save output of each technique (ex. u'~/Bench/expresults/')
-    - JavaOptions: Set the java command options. (ex. '-Xms512m -Xmx4000m')
-    - JavaOptions_Locus: Set the java options for Locus. Because Locus need a large memory, we separated the option. (ex. '-Xms512m -Xmx4000m')
-* The script executes 6 techniques for all subjects.
-* The script basically works for the multiple versions of bug repository and each of the related source codes.
-* Options
-    - -w <work name>: \[necessary\] With this option, users can set the ID for each experiment, and each ID is also used as a directory name to store the execution results of each Technique. Additionally, if the name starts with "Old", this script works for the previous data, otherwise works for the new data.
-    - -g <group name>: A specific group. With this option, the script works for the subjects in the specified group. 
-    - -p <subject name>: A specific subject. To use this option, you should specify the group name. 
-    - -t <technique name>: A specific technique. With this option, the script makes results of specified technique.
-    - -v <version name>: A specific version. With this option, the script works for the specified version of source code.
-    - -s: Single version mode, With this option, the script works for the only latest source code.
-    - -m: With this option, the bug repositories created by combining the text of duplicate bug report pairs are used instead of the normal one.
-
-
-* Examples
-> Bench/scripts$ python launcher_Tool.py -w NewData <br />
-> Bench/scripts$ python launcher_Tool.py -w NewDataSingle -s <br />
-> Bench/scripts$ python launcher_Tool.py -w NewData_Locus -t Locus <br />
-> Bench/scripts$ python launcher_Tool.py -w NewData_CAMLE -g Apache -p CAMEL <br />
+To get the result of each technique, you can use 'Bench/scripts/launcher_Tool.py'. The script executes 6 techniques for all subjects.
+The script basically works for the multiple versions of bug repository and each of the related source codes. We explain what you need to run the tool first and describe the tool usage.
 
 ### Install Java
 All previous techniques are executed in Java Runtime Environment. If you have java in your computer, please skip this section.
@@ -283,6 +257,32 @@ All previous techniques are executed in Java Runtime Environment. If you have ja
 > $ vi Settings.txt <br />
 > &nbsp; &nbsp; indripath=/usr/local/bin/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<-- edit this value as a the first log of "make install" <br />
 >
+
+### Usage of launcher_Tool.py
+* Preparing step
+    - You need to set the PATHs and JavaOptions in the launcher_Tool.py file.
+    - Open the file, launcher_Tool.py and check the following variables 
+    - ProgramPATH: Set the directory path which contains the release files of the IRBL techniques. (ex. u'~/Bench/techniques/releases/')
+    - OutputPATH: Set the result path to save output of each technique (ex. u'~/Bench/expresults/')
+    - JavaOptions: Set the java command options. (ex. '-Xms512m -Xmx4000m')
+    - JavaOptions_Locus: Set the java options for Locus. Because Locus need a large memory, we separated the option. (ex. '-Xms512m -Xmx8000m')
+* Options
+    - -w <work name>: \[necessary\] With this option, users can set the ID for each experiment, and each ID is also used as a directory name to store the execution results of each Technique. Additionally, if the name starts with "Old", this script works for the previous data, otherwise works for the new data.
+    - -g <group name>: A specific group. With this option, the script works for the subjects in the specified group. 
+    - -p <subject name>: A specific subject. To use this option, you should specify the group name. 
+    - -t <technique name>: A specific technique. With this option, the script makes results of specified technique.
+    - -v <version name>: A specific version. With this option, the script works for the specified version of source code.
+    - -s: Single version mode, With this option, the script works for the only latest source code.
+    - -m: With this option, the bug repositories created by combining the text of duplicate bug report pairs are used instead of the normal one.
+
+
+* Examples
+> Bench/scripts$ python launcher_Tool.py -w ExpFirst <br />
+> Bench/scripts$ python launcher_Tool.py -w ExpFirst -s <br />
+> Bench/scripts$ python launcher_Tool.py -w ExpFirst_Locus -t Locus <br />
+> Bench/scripts$ python launcher_Tool.py -w ExpFirst_CAMLE -g Apache -p CAMEL <br />
+
+
 
 # Previous Techniques Load on Eclipse
 We changed previous techniques on Eclipse. But we didn't include eclipse environment files (.metadata folder, .project and .classpath file) in each previous techniques folders.
