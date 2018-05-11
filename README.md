@@ -1,6 +1,6 @@
 # Bench4BL
-Bench4BL is a collection of bug reports and corresponding source code files to fix a bug specified by each bug report to support bug localization research. This collection contains 10,017 bug reports collected from 51 open source projects and each bug report is mapped with the source code files of the corresponding version. Therefore, this dataset can help evaluate bug localization techniques with a large number of subjects.
-This document describes how to use this dataset and how to reproduce the result of our paper below. Please cite the following paper if you utilize the dataset.
+Bench4BL is a collection of bug reports and corresponding source code files to fix a bug specified by each bug report to support bug localization research. This collection contains 10,017 bug reports collected from 51 open source projects, and each bug report is mapped with the source code files of the corresponding version. Therefore, this dataset can help researchers and practitioners evaluate bug localization techniques with a large number of subjects.
+This document describes how to use this dataset and how to reproduce the result of our paper below. Please cite the following paper if you utilize the dataset:
 
 ```
 @inproceedings{bench4bl,
@@ -16,10 +16,10 @@ This document describes how to use this dataset and how to reproduce the result 
 
 
 ### Subjects ( Bug reports and Source Code Repositories )
-The below table shows 5 old subjects that used in previous studies and 46 new subjects that we collected more.
-The subjects classified into 6 groups to manage them (The Previous group is old subjects).
-Each of the archive contains bug reports, bug report repositories that we refined, cloned git repository and metadata of them that we made. If you need a recent git repository, please clone again through a link in Git Repository column.
-You can use this data sets following a section "Getting Started"
+The following table shows five old subjects that used in previous studies and 46 new subjects that we newly collected.
+The subjects are classified into six groups (the five subjects used in previous studies are grouped as "Old subjects").
+Each subject consists of bug reports, bug report repositories that we refined, cloned git repository, and metadata of them that we curated. If you need a recent git repository, please clone the repository again by using a link in the "Git Repository" column.
+Please refer to "Getting Started" for more details.
 
 
 | Group                  | Subject | Archive       | Git Repository                           |
