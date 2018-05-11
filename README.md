@@ -195,12 +195,12 @@ For example, Let you want to store CODEC Subject's version information. You coul
 
 
 ### Inflate the source codes.
-We used multiple versions of source code for the experiment. Since the provided archives have only a git repository, you need to check out repositories according to versions that you selected above. The script launcher_GitInflator.py clones a git repositories and checks it out into the multiple versions which you selected. These source codes are stored into a folder 'Bench/data/[Group Name]/[Project Name]/sources/' automatically.
+We used multiple versions of source code for the experiment. Since the provided archives have only a git repository, you need to check out repositories according to versions that you selected above. The script 'launcher_GitInflator.py' clones a git repositories and checks it out into the multiple versions which you selected. These source codes are stored into a folder 'Bench/data/[Group Name]/[Project Name]/sources/' automatically.
 > Bench/scripts$ python launcher_GitInflator.py <br />
 
     
 ### Build bug repositories
-We need to build a repository for the bug reports with pre-crawled bug reports. The bug repository is in XML format and includes bug data which is used in the experiments. launcher_repoMaker.py makes the bug repository that containing entire crawled bug reports information and bug repositories that stores bug reports according to the mapped version. But, since we already offer the result of this step in provided subject's archives, use this script if you want to update the bug repositories. launcher_DupRepo.py creates a bug repository file that contains bug information merged duplicate bug reports.
+We need to build a repository for the bug reports with pre-crawled bug reports. The bug repository is in XML format and includes bug data which is used in the experiments. The 'launcher_repoMaker.py' makes the bug repository that containing entire crawled bug reports information and bug repositories that stores bug reports according to the mapped version. But, since we already offer the result of this step in provided subject's archives, use this script if you want to update the bug repositories. The 'launcher_DupRepo.py' creates a bug repository file that contains bug information merged duplicate bug reports.
 
 > Bench/scripts$ python launcher_repoMaker.py <br />
 > Bench/scripts$ python launcher_DupRepo.py <br />
