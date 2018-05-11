@@ -2,17 +2,17 @@
 Bench4BL is a collection of bug reports and corresponding source code files to fix a bug specified by each bug report to support bug localization research. This collection contains 10,017 bug reports collected from 51 open source projects, and each bug report is mapped with the source code files of the corresponding version. Therefore, this dataset can help researchers and practitioners evaluate bug localization techniques with a large number of subjects.
 This document describes how to use this dataset and how to reproduce the result of our paper below. Please cite the following paper if you utilize the dataset:
 
-```
-@inproceedings{bench4bl,
-  Author = {Jaekwon Lee and Dongsun Kim and Tegawend\'e F. Bissyand\'e and Woosung Jung and Yves Le Traon},
-  Title = {Bench4BL: Reproducibility Study of the Performance of IR-based Bug Localization},
-  Booktitle = {Proceedings of the 27th ACM SIGSOFT International Symposium  on  Software Testing and Analysis},
-  Series = {ISSTA 2018},
-  Year = {2018},
-  doi = {10.1145/3213846.3213856},
-  pages = {1--12}
-}
-```
+
+    @inproceedings{bench4bl,
+      Author = {Jaekwon Lee and Dongsun Kim and Tegawend\'e F. Bissyand\'e and Woosung Jung and Yves Le Traon},
+      Title = {Bench4BL: Reproducibility Study of the Performance of IR-based Bug Localization},
+      Booktitle = {Proceedings of the 27th ACM SIGSOFT International Symposium  on  Software Testing and Analysis},
+      Series = {ISSTA 2018},
+      Year = {2018},
+      doi = {10.1145/3213846.3213856},
+      pages = {1--12}
+    }
+
 
 
 ### Subjects ( Bug reports and Source Code Repositories )
