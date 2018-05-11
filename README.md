@@ -96,7 +96,7 @@ We describe scripts folder briefly and list up each step of all procedures.
     ## Scripts Directory Structure ##
     - repository: Scripts to prepare the resources to execute each technique.
     - results: Scripts to collect the execution results of each technique and export to Excel.
-    - analysis: Scripts to analysis for the result of each technique and features extracted from resources. <br /> 
+    - analysis: Scripts to analysis for the result of each technique and features extracted from resources.
                  We applied Mann-Whitney U test, Pearson correlation and so on.
     - commons: Scripts to managing subjects and common functions.
     - utils: Personal libraries for experiments.
