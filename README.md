@@ -5,7 +5,7 @@ This document describes how to use this dataset and how to reproduce the result 
 ```
 @inproceedings{bench4bl,
   Author = {Jaekwon Lee and Dongsun Kim and Tegawend\'e F. Bissyand\'e and Woosung Jung and Yves Le Traon},
-  Title = {IR-based Bug Localization: Reproducibility Study on the Performance of State-of-the-Art Approaches},
+  Title = {Bench4BL: Reproducibility Study of the Performance of IR-based Bug Localization},
   Booktitle = {Proceedings of the 27th ACM SIGSOFT International Symposium  on  Software Testing and Analysis},
   Series = {ISSTA 2018},
   Year = {2018},
