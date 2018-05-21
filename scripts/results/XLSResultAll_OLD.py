@@ -326,6 +326,6 @@ class XLSResultAllOLD(XLSbasic):
 ###############################################################################################################
 if __name__ == "__main__":
 	name = u'PreviousData'
-	obj = XLSResultAllOLD(u'/var/experiments/BugLocalization/dist/expresults/Result_%s.xlsx' % name)
+	obj = XLSResultAllOLD(u'/mnt/exp/Bench4BL/expresults/Result_%s.xlsx' % name)
 	obj.run(name)
 	pass
