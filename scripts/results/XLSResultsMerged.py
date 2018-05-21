@@ -234,6 +234,6 @@ class XLSResultAll(XLSbasic):
 if __name__ == "__main__":
 
 	name = u'DupData'
-	obj = XLSResultAll(u'/var/experiments/BugLocalization/dist/expresults/Result_Merged_%s.xlsx' % name)
+	obj = XLSResultAll(u'/mnt/exp/Bench4BL/expresults/Result_Merged_%s.xlsx' % name)
 	obj.run(name, _isUnion=False)
 	pass
