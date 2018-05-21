@@ -428,7 +428,7 @@ class XLSResultAll(XLSbasic):
 ###############################################################################################################
 if __name__ == "__main__":
 	name = u'ISSTASingle'
-	obj = XLSResultAll(u'/mnt/exp/Bug/expresults/Result_%s.xlsx' % name)
+	obj = XLSResultAll(u'/mnt/exp/Bench4BL/expresults/Result_%s.xlsx' % name)
 	obj.run(name, _isUnion=True)
 
 	pass
