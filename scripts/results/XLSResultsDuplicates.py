@@ -294,11 +294,11 @@ class XLSResultsDuplicates(XLSbasic):
 ###############################################################################################################
 if __name__ == "__main__":
 	name = u'NewData_AWS'
-	obj = XLSResultsDuplicates(u'/var/experiments/BugLocalization/dist/expresults/Result_Duplicates_%s.xlsx' % name)
+	obj = XLSResultsDuplicates(u'/mnt/exp/Bench4BL/expresults/Result_Duplicates_%s.xlsx' % name)
 	obj.run(name, _isUnion=False)
 
 	# name = u'NewDataSingle'
-	# obj = XLSResultsDuplicates(u'/var/experiments/BugLocalization/dist/expresults/Result_Duplicates_%s.xlsx' % name)
+	# obj = XLSResultsDuplicates(u'/mnt/exp/Bench4BL/expresults/Result_Duplicates_%s.xlsx' % name)
 	# obj.run(name, _isUnion=True)
 	pass
 
