@@ -13,8 +13,8 @@ class Subjects(object):
 	Sourcecode, Bug reports, Duplicate bug reports
 	'''
 	__name__ = u'Subjects'
-	root = u'/mnt/exp/Bug/data/'
-	root_result = u'/mnt/exp/Bug/expresults/'
+	root = u'/mnt/exp/Bench4BL/data/'
+	root_result = u'/mnt/exp/Bench4BL/expresults/'
 	techniques = ['BugLocator', 'BRTracer', 'BLUiR', 'AmaLgam', 'BLIA', 'Locus']
 	groups = ['Apache', 'Commons', 'JBoss', 'Wildfly', 'Spring']
 	projects = {
