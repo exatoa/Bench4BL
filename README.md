@@ -277,7 +277,7 @@ All previous techniques are executed in Java Runtime Environment. If you have ja
 
 * Examples
 > Bench/scripts$ python launcher_Tool.py -w ExpFirst <br />
-> Bench/scripts$ python launcher_Tool.py -w ExpFirst -s <br />
+> Bench/scripts$ python launcher_Tool.py -w ExpFirst -s 1 <br />
 > Bench/scripts$ python launcher_Tool.py -w ExpFirst_Locus -t Locus <br />
 > Bench/scripts$ python launcher_Tool.py -w ExpFirst_CAMLE -g Apache -p CAMEL <br />
 
