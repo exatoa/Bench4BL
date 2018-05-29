@@ -310,9 +310,9 @@ def getargs():
 	parser.add_argument('-t', dest='technique', default=None, help='A specific technique name what you want to work.')
 	parser.add_argument('-v', dest='version', default=None, help='A specific version name what you want to work.')
 	parser.add_argument('-w', dest='workType', default=None, help='workType : PreviousData or not. other case is NewData')
-	parser.add_argument('-s', dest='isSingle', default=False, type=bool, help='use latest source code for all bug report')
-	parser.add_argument('-d', dest='isDist', default=False, type=bool, help='use the multiple bug repository and the single source code')
-	parser.add_argument('-m', dest='useMerge', default=False, type=bool, help='use merged bug reporitory')
+	parser.add_argument('-s', dest='isSingle', default=False, action='store_true', help='use latest source code for all bug report')
+	parser.add_argument('-d', dest='isDist', default=False, action='store_true', help='use the multiple bug repository and the single source code')
+	parser.add_argument('-m', dest='useMerge', default=False, action='store_true', help='use merged bug reporitory')
 
 	args = parser.parse_args()
 
