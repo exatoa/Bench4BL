@@ -77,7 +77,7 @@ class BugFilter:
 		self.gitlogs = _gitlogs
 		self.gitversions = _gitversions
 		bugitems = self.loads()
-		bugitems = self.link_fixedFiles(bugitems)
+		bugitems = self.link_fixedFiles(bugitems, _removeTest)
 		bugitems, dupgroups = self.make_dupgroups(bugitems)
 		bugitems = self.filter(bugitems)
 		bugitems.sort(self.cmp)  #fixed time order ASC
