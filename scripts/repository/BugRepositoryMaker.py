@@ -241,12 +241,12 @@ class BugRepositoryMaker:
 	#######################################################################
 	# Overall Process
 	#######################################################################
-	def run(self, _versions):
+	def run(self, _versions, _removeTest=True):
 
 		print(u'[%s] start making bug repositories for %s' %(self.__name__, self.ProjectName))
 		logs = self.git.load()
 		tagmaps = self.gitVersion.load()
-		items, dupgroups = self.bugFilter.run(logs, tagmaps)
+		items, dupgroups = self.bugFilter.run(logs, tagmaps, _removeTest)
 		print(u'[%s] %d Bug reports has been merged!' % (self.ProjectName, len(items)))
 
 		# refine more
