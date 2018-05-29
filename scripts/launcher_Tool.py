@@ -32,7 +32,7 @@ class Launcher(object):
 	ProgramPATH = u'/mnt/exp/Bug/techniques/releases/'
 	OutputPATH = u'/mnt/exp/Bug/expresults/'
 	JavaOptions = u'-Xms512m -Xmx4000m'
-	JavaOptions_Locus = u'-Xms512m -Xmx8000m'
+	JavaOptions_Locus = u'-Xms512m -Xmx10000m'
 	TYPE = u'Test'
 
 	def __init__(self):
