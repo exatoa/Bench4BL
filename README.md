@@ -102,8 +102,8 @@ All the procedures are tested on Ubuntu 16.04 LTS.
 
 
 ### Clone this repository
-Clone the repository by using the following command. (We cloned into the "Bench" directory.)
-> $ git clone https://github.com/exatoa/Bench4BL.git Bench
+Clone the repository by using the following command.
+> $ git clone https://github.com/exatoa/Bench4BL.git
 
 If you don't have git, please install git first using following commands.
 > $ sudo apt-get update <br />
@@ -111,23 +111,23 @@ If you don't have git, please install git first using following commands.
 
     
 ### Download subjects' archives.
-Download all subjects from the Subjects table and save them in the cloned repository path. We saved them into the 'Bench/_archives' directory. To use our scripts, we recommend that each subject stores in the group directory to which it belongs. After downloaded, unpack all archives by using the unpacking.sh script. If you don't need all subjects, you can download some of them.
-> $ cd Bench <br />
-> Bench$ mkdir _archives <br />
-> Bench$ cd _archives <br />
-> Bench/_archives$ mkdir Apache <br /> 
-> Bench/_archives$ cd Apache <br />
-> Bench/_archives/Apache$ wget -O CAMEL.tar "https://sourceforge.net/projects/irblsensitivity/files/Apache/CAMEL.tar" <br />
+Download all subjects from the Subjects table and save them in the cloned repository path. We saved them into the 'Bench4BL/_archives' directory. To use our scripts, we recommend that each subject stores in the group directory to which it belongs. After downloaded, unpack all archives by using the unpacking.sh script. If you don't need all subjects, you can download some of them.
+> $ cd Bench4BL <br />
+> Bench4BL$ mkdir _archives <br />
+> Bench4BL$ cd _archives <br />
+> Bench4BL/_archives$ mkdir Apache <br /> 
+> Bench4BL/_archives$ cd Apache <br />
+> Bench4BL/_archives/Apache$ wget -O CAMEL.tar "https://sourceforge.net/projects/irblsensitivity/files/Apache/CAMEL.tar" <br />
 > ....work recursively.... <br />
-> Bench$ mkdir data <br />
-> Bemch$ chmod +x unpacking.sh <br />
-> Bench$ ./unpacking.sh _archives data
+> Bench4BL$ mkdir data <br />
+> Bench4BL$ chmod +x unpacking.sh <br />
+> Bench4BL$ ./unpacking.sh _archives data
 
 The last command unpacks all archive files in '_archives' folder into 'data' folder as keeping the directory structures in '_archives'.
 
 We appended the script to download all archives to the '_archives' folder. If you want to use this, please use following instructions. This scripts creats all folders and download archives into each folder.
-> Bench$ chmod +x downloads.sh <br />
-> Bench$ ./downloads.sh
+> Bench4BL$ chmod +x downloads.sh <br />
+> Bench4BL$ ./downloads.sh
 
 
 ### Install python
@@ -153,12 +153,12 @@ You can install using following commnad.
 > $ pip install numpy scipy matplotlib pytz GitPython bs4 xlswriter python-dateutil<br />
 
 ### Update PATH information (Editing script code)
-In the file 'Bench/scripts/commons/Subject.py', there are variables that stores a resource PATH information as a string and subject informations. To use our scripts, you should change the variables properly. You should use absolute PATH to update the PATH information and use the same subject name with subject Directory name for the subject information.
+In the file 'Bench4BL/scripts/commons/Subject.py', there are variables that stores a resource PATH information as a string and subject informations. To use our scripts, you should change the variables properly. You should use absolute PATH to update the PATH information and use the same subject name with subject Directory name for the subject information.
 
     class Subjects(object):
         ...
-        root = u'/mnt/exp/Bench/data/'
-        root_result = u'/mnt/exp/Bench/expresults/'
+        root = u'/mnt/exp/Bench4BL/data/'
+        root_result = u'/mnt/exp/Bench4BL/expresults/'
         techniques = ['BugLocator', 'BRTracer', 'BLUiR', 'AmaLgam', 'BLIA', 'Locus']
         groups = ['Apache', 'Commons', 'JBoss', 'Wildfly', 'Spring']
         projects = {
@@ -179,7 +179,7 @@ In the file 'Bench/scripts/commons/Subject.py', there are variables that stores 
 
 ### Version Information
 We selected specific versions for each subject and saved into 'versions.txt'. The file is in JSON format and we used a dictionary to save information. Top-level keys mean a subject name corresponding to "Subjects.py". The selected versions are also listed in dictionary structure. The key text is version name which means you want to represent it and the value test is tag name written in git repository.
-For example, assume that you want to store CODEC Subject's version information. You prepare JSON code and save it in 'Bench/data/Commons/CODEC/versions.txt'. We offer the selected versions in the archieves. If you want to use a version that we selected, it is not necessary to change version information files.
+For example, assume that you want to store CODEC Subject's version information. You prepare JSON code and save it in 'Bench4BL/data/Commons/CODEC/versions.txt'. We offer the selected versions in the archieves. If you want to use a version that we selected, it is not necessary to change version information files.
 
     {
         "CODEC":{
@@ -198,24 +198,24 @@ For example, assume that you want to store CODEC Subject's version information. 
 
 
 ### Inflate the source codes.
-We used multiple versions of source code for the experiment. Since the provided archives have only a git repository, you need to check out repositories according to versions that you selected above. The script 'launcher_GitInflator.py' clones a git repositories and checks it out into the multiple versions which you selected. These source codes are stored into a folder 'Bench/data/[Group Name]/[Project Name]/sources/' automatically.
-> Bench/scripts$ python launcher_GitInflator.py <br />
+We used multiple versions of source code for the experiment. Since the provided archives have only a git repository, you need to check out repositories according to versions that you selected above. The script 'launcher_GitInflator.py' clones a git repositories and checks it out into the multiple versions which you selected. These source codes are stored into a folder 'Bench4BL/data/[Group Name]/[Project Name]/sources/' automatically.
+> Bench4BL/scripts$ python launcher_GitInflator.py <br />
 
     
 ### Build bug repositories
 We need to build a repository for the bug reports with pre-crawled bug reports. The bug repository is in XML format and includes bug data which is used in the experiments. The 'launcher_repoMaker.py' makes the bug repository that containing entire crawled bug reports information and bug repositories that stores bug reports according to the mapped version. But, since we already offer the result of this step in provided subject's archives, use this script if you want to update the bug repositories. The 'launcher_DupRepo.py' creates a bug repository file that contains bug information merged duplicate bug reports.
 
-> Bench/scripts$ python launcher_repoMaker.py <br />
-> Bench/scripts$ python launcher_DupRepo.py <br />
+> Bench4BL/scripts$ python launcher_repoMaker.py <br />
+> Bench4BL/scripts$ python launcher_DupRepo.py <br />
 
     
 ### Update count information of bug and source codes.
 The script of Counting.py makes a count information for bug and source code. The result will be stored 'bugs.txt', 'sources.txt' and 'answers.txt' in each subject's folder.
-> Bench/scripts$ python Counting.py <br />
+> Bench4BL/scripts$ python Counting.py <br />
 
 
 # Execute Previous Techniques
-To get the result of each technique, you can use 'Bench/scripts/launcher_Tool.py'. The script executes 6 techniques for all subjects.
+To get the result of each technique, you can use 'Bench4BL/scripts/launcher_Tool.py'. The script executes 6 techniques for all subjects.
 The script basically works for the multiple versions of bug repository and each of the related source codes. We explain what you need to run the tool first and describe the tool usage.
 
 ### Install Java
@@ -280,10 +280,10 @@ All previous techniques are executed in Java Runtime Environment. If you have ja
 
 
 * Examples
-> Bench/scripts$ python launcher_Tool.py -w ExpFirst <br />
-> Bench/scripts$ python launcher_Tool.py -w ExpFirst -s <br />
-> Bench/scripts$ python launcher_Tool.py -w ExpFirst_Locus -t Locus <br />
-> Bench/scripts$ python launcher_Tool.py -w ExpFirst_CAMLE -g Apache -p CAMEL <br />
+> Bench4BL/scripts$ python launcher_Tool.py -w ExpFirst <br />
+> Bench4BL/scripts$ python launcher_Tool.py -w ExpFirst -s <br />
+> Bench4BL/scripts$ python launcher_Tool.py -w ExpFirst_Locus -t Locus <br />
+> Bench4BL/scripts$ python launcher_Tool.py -w ExpFirst_CAMLE -g Apache -p CAMEL <br />
 
 
 
