@@ -125,6 +125,10 @@ Download all subjects from the Subjects table and save them in the cloned reposi
 
 The last command unpacks all archive files in '_archives' folder into 'data' folder as keeping the directory structures in '_archives'.
 
+We appended the script to download all archives to the '_archives' folder. If you want to use this, please use following instructions. This scripts creats all folders and download archives into each folder.
+> Bench$ chmod +x downloads.sh <br />
+> Bench$ ./downloads.sh
+
 
 ### Install python
 We used python 2.7. (If you have python 2.7 in your computer, please skip this section.)
