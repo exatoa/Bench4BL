@@ -261,8 +261,8 @@ All previous techniques are executed in Java Runtime Environment. If you have ja
 * Preparing step
     - You need to set the PATHs and JavaOptions in the launcher_Tool.py file.
     - Open the file, launcher_Tool.py and check the following variables 
-    - ProgramPATH: Set the directory path which contains the release files of the IRBL techniques. (ex. u'~/Bench/techniques/releases/')
-    - OutputPATH: Set the result path to save output of each technique (ex. u'~/Bench/expresults/')
+    - ProgramPATH: Set the directory path which contains the release files of the IRBL techniques. (ex. u'~/Bench4BL/techniques/releases/')
+    - OutputPATH: Set the result path to save output of each technique (ex. u'~/Bench4BL/expresults/')
     - JavaOptions: Set the java command options. (ex. '-Xms512m -Xmx4000m')
     - JavaOptions_Locus: Set the java options for Locus. Because Locus need a large memory, we separated the option. (ex. '-Xms512m -Xmx8000m')
 * Options
