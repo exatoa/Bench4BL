@@ -10,6 +10,15 @@ class VersionUtil(object):
 		return latest
 
 	@staticmethod
+	def get_latest_tag(_versions):
+		latest, latest_tag = _versions.items()[0]
+		for version, tag in _versions.items():
+			if VersionUtil.cmpVersion(version, latest) > 0:
+				latest = version
+				latest_tag = tag
+		return latest_tag
+
+	@staticmethod
 	def get_version_groups( _str):
 		value = _str.strip()
 		if len(value)==0: return []

@@ -21,6 +21,7 @@ from commons import Previous
 from commons import VersionUtil
 import subprocess
 from datetime import datetime
+from repository import GitInflator
 
 
 class Launcher(object):
@@ -99,14 +100,14 @@ class Launcher(object):
 		bugrepo = self.S.getPath_bugrepo(_group, _project)
 		params = {
 			'n': u'%s_%s' % (_project, _version if _isUnion is False else u'all'),
-			's': self.S.getPath_source(_group, _project, _version),  # source path
-			'b': os.path.join(bugrepo,u'repository%s.xml' % (u'' if _isUnion is True else u'/%s' % _version)),  # base bug path
+			's': self.S.getPath_source(_group, _project, _version) if _isUnion is False else self.S.getPath_gitrepo(_group, _project),  # source path
+			'b': os.path.join(bugrepo,u'repository%s.xml' % (u'/%s' % _version if _isUnion is False else u'')),  # base bug path
 			'w': os.path.join(self.OutputPATH, self.TYPE, _group, _project)+u'/',  # result path
 			'a': _alpha,  # alpha parameter
 		}
 
 		if _useMerge is True:
-			params['b'] = os.path.join(bugrepo,u'repository_merge%s.xml' % (u'' if _isUnion is True else u'/%s' % _version))
+			params['b'] = os.path.join(bugrepo,u'repository_merge%s.xml' % (u'/%s' % _version if _isUnion is False else u''))
 
 		if _program in ['AmaLgam', 'BLIA', 'Locus']:
 			params['g'] = self.S.getPath_gitrepo(_group, _project)  # git repo.
@@ -245,8 +246,19 @@ class Launcher(object):
 
 					elif _isUnion is True:
 						# if the self.S.version[project] uses, the error occurs because there are versions with no bug report
+						tagName = VersionUtil.get_latest_tag(self.S.versions[project])
 						verName = VersionUtil.get_latest_version(self.S.bugs[project].keys())
-						params = self.get_params(program, group, project, 0.2, verName, _isUnion)
+
+						# check out target version
+						print(u' checkout %s... ' % tagName, end=u'')
+						inf = GitInflator(project, self.S.urls[project], self.S.getPath_base(group, project))
+						if inf.checkout(tagName) is False:
+							print(u'Failed')
+							continue
+						print(u'Done')
+
+						# execute JAVA
+						params = self.get_params(program, group, project, 0.2, None, _isUnion)
 						self.executeJava(program, params, _project=project, _vname =verName)
 					else:
 						# In the version is not single case,

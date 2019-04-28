@@ -22,6 +22,7 @@ class GitInflator():
 		self.gitURL = _giturl
 		self.workDir = _basePATH
 		self.sourcesPath = os.path.join(_basePATH, self.sourcesRepo)
+		self.projectPath = os.path.join(self.workDir, self.gitRepo)
 		pass
 
 	def inflate(self, _versions):
@@ -81,14 +82,14 @@ class GitInflator():
 		os.remove(name)
 
 	def clone(self, passExists):
-		basepath = os.path.join(self.workDir, u'gitrepo')
+		basepath = os.path.join(self.workDir, self.gitRepo)
 		if os.path.exists(basepath) is True:
 			if passExists is True:
 				return basepath
 			shutil.rmtree(basepath, onerror=self.del_rw)
 
 		try:
-			subprocess.check_output(['git', 'clone', self.gitURL, u'gitrepo'],  cwd=self.workDir)
+			subprocess.check_output(['git', 'clone', self.gitURL, self.gitRepo],  cwd=self.workDir)
 		except Exception as e:
 			print(e)
 			return None
