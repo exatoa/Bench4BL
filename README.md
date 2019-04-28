@@ -151,6 +151,9 @@ We have 8 dependencies below:
 
 You can install using following commnad.
 > $ pip install numpy scipy matplotlib pytz GitPython bs4 xlswriter python-dateutil<br />
+> or<br />
+> $ pip install -r scripts/requirements.txt<br />
+> we serve the requirements file.<br />
 
 ### Update PATH information (Editing script code)
 In the file 'Bench4BL/scripts/commons/Subject.py', there are variables that stores a resource PATH information as a string and subject informations. To use our scripts, you should change the variables properly. You should use absolute PATH to update the PATH information and use the same subject name with subject Directory name for the subject information.
@@ -221,11 +224,8 @@ The script basically works for the multiple versions of bug repository and each 
 ### Install Java
 All previous techniques are executed in Java Runtime Environment. If you have java in your computer, please skip this section.
 
-> $ sudo apt-get install python-software-properties <br />
-> $ sudo add-apt-repository ppa:webupd8team/java <br />
 > $ sudo apt-get update <br />
-> $ sudo apt-get install oracle-java8-installer <br />
->  <br />
+> $ sudo apt-get install openjdk-8-jre-headless <br />
 
 ### Install indri
 - To execute BLUiR and AmaLgam, you need to install indri.
