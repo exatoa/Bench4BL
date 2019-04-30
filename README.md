@@ -225,6 +225,8 @@ The script basically works for the multiple versions of bug repository and each 
 ### Install Java
 All previous techniques are executed in Java Runtime Environment. If you have java in your computer, please skip this section.
 
+> $ sudo apt-get install python-software-properties <br />	
+> $ sudo add-apt-repository ppa:webupd8team/java <br />	
 > $ sudo apt-get update <br />
 > $ sudo apt-get install openjdk-8-jre-headless <br />
 
