@@ -150,6 +150,7 @@ We have 8 dependencies below:
     XlsxWriter >= 0.9.8
 
 You can install using following commnad.
+> $ sudo pip install --upgrade pip <br />
 > $ pip install numpy scipy matplotlib pytz GitPython bs4 xlswriter python-dateutil<br />
 > or<br />
 > $ pip install -r scripts/requirements.txt<br />
