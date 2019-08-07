@@ -289,11 +289,13 @@ class BugFilter:
 				if src['id'] in visited and link['id'] in visited: continue
 
 				# find dest data
+				dest = None
 				for y in range(len(_bugitems)):
 					if x == y:continue
 					if _bugitems[y]['id'] != link['id']: continue
 					dest = _bugitems[y]
 					break
+				if dest is None: continue 
 
 				# add worklist
 				if len(src['fixedFiles'])>0 and len(dest['fixedFiles'])>0:
