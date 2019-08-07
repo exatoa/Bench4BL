@@ -250,7 +250,7 @@ All previous techniques are executed in Java Runtime Environment. If you have ja
 > $ cd indri-5.6 <br />
 > $ ./configure <br />
 > $ make <br />
-> $ make install <br />
+> $ sudo make install <br />
 >    /usr/bin/install -c -m 755 -d /usr/local/bin <br />
 >    /usr/bin/install -c -m 755 -d /usr/local/include <br />
 >    /usr/bin/install -c -m 755 -d /usr/local/include/indri <br />
@@ -259,7 +259,7 @@ All previous techniques are executed in Java Runtime Environment. If you have ja
 >    /usr/bin/install -c -m 644 Makefile.app /usr/local/share/indri <br />
 >  <br />
 > // changeSettings.txt file <br />
-> $ cd ~/irblsensitivity/techniques/releases &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// We assume you cloned our repository to  <br />
+> $ cd ~/Bench4BL/techniques/releases &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// We assume you cloned our repository to  <br />
 > $ vi Settings.txt <br />
 > &nbsp; &nbsp; indripath=/usr/local/bin/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<-- edit this value as a the first log of "make install" <br />
 >
