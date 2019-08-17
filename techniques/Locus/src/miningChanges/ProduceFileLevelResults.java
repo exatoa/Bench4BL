@@ -124,10 +124,10 @@ public class ProduceFileLevelResults {
 				if (description.contains("bug") || description.contains("patch") || 
 						description.contains("fix") || description.contains("issue")) {
 //				if (description.contains("fix") || description.contains("bug")) {
-					isCommitFix.put(hash.substring(0, 7), true);
+					isCommitFix.put(hash, true);
 					lines.add(hash + "\t1");
 				} else {
-					isCommitFix.put(hash.substring(0, 7), false);
+					isCommitFix.put(hash, false);
 					lines.add(hash + "\t0");
 				}
 			}
@@ -136,7 +136,7 @@ public class ProduceFileLevelResults {
 			lines = FileToLines.fileToLines(commitFix);
 			for (String line : lines) {
 				String[] split = line.split("\t");
-				isCommitFix.put(split[0].substring(0,7), split[1].equals("1"));
+				isCommitFix.put(split[0], split[1].equals("1"));
 			}
 		}	
 		
@@ -214,7 +214,8 @@ public class ProduceFileLevelResults {
 					max = fixSuspicious.get(sid);
 			
 			for (int sid : fixSuspicious.keySet()) 
-				fixSuspicious.put(sid, fixSuspicious.get(sid) / max);
+				if (max > 0.0)
+					fixSuspicious.put(sid, fixSuspicious.get(sid) / max);
 			
 			//calculate finalResults
 			for (String change : results.keySet()) {
@@ -242,10 +243,10 @@ public class ProduceFileLevelResults {
 				double score = finalRanks.get(r).getValue();
 				String filename = sourceFileIndex.get(sid);	
 				
-				// ÀüÃ¼ ·©Å·Á¤º¸ ÀúÀå
+				// ï¿½ï¿½Ã¼ ï¿½ï¿½Å·ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				fullRanks.add(r + "\t" + score + "\t" + filename);
 				
-				// answer¿¡ ´ëÇÑ °á°ú¸¸ ÀúÀå.
+				// answerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 				if (!ansFileIndices.contains(sid)) continue;				
 				rawRanks.add(bid + "\t" +filename + "\t" + r + "\t" + score );
 				rank.add(r);

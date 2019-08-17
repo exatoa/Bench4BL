@@ -103,7 +103,7 @@ public class GitHelp {
 			BufferedReader bw = new BufferedReader(new FileReader(new File(filename)));
 			line = bw.readLine();
 			while ( line != null) {
-				hashId = line.substring(7);
+				hashId = line.substring(8, 19);
 				line = bw.readLine();
 				if (!line.startsWith("Author")) line = bw.readLine();	
 				int nameStart = line.indexOf(":") + 1;
