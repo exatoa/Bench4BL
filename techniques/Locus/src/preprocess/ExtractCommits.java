@@ -20,7 +20,7 @@ public class ExtractCommits {
 	public static String loc = main.Main.settings.get("workingLoc");
 	public static String repo = main.Main.settings.get("repoDir");
 	public static HashSet<String> concernedCommits;
-	public static HashMap<String,String> changeMap;
+	public static HashSet<String> changeMap;
 	public static HashMap<String,Long> changeTime;
 	public static void indexHunks() throws Exception {
 		getCommitsOneLine();
@@ -91,17 +91,14 @@ public class ExtractCommits {
 		int max = concernedCommits.size();
 		for (String hash : concernedCommits) {
 			count++;
-			if (!changeMap.containsKey(hash)) continue;
+			if (!changeMap.contains(hash)) continue;
 
-			
-			String fullHash = changeMap.get(hash);
-			
-			File parentPath = new File(revisionLoc + File.separator + fullHash.substring(0,2)+ File.separator +fullHash.substring(2,4));
+			File parentPath = new File(revisionLoc + File.separator + hash.substring(0,2) + File.separator + hash.substring(2,4));
             //file = new File(revisionLoc + File.separator + fullHash);
 			if (!parentPath.exists())
 				parentPath.mkdirs();
 			
-			String commitFile = parentPath.getAbsolutePath() + File.separator + fullHash + ".txt";
+			String commitFile = parentPath.getAbsolutePath() + File.separator + hash + ".txt";
 			file = new File(commitFile);
 			if (!file.exists()) {
 				String content = GitHelp.gitShow(hash, repo);

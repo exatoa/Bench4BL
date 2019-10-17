@@ -80,7 +80,7 @@ public class ProduceChangeLevelResults {
 			String[] splits = line.split("\t");
 			String revisionNO = splits[0];
 			Date date = new SimpleDateFormat("EEE MMM dd HH:mm:ss yyyy Z", Locale.ENGLISH).parse(splits[2]);
-			revisionTime.put(revisionNO.substring(0,7), date.getTime());
+			revisionTime.put(revisionNO, date.getTime());
 		}
 	}
 	

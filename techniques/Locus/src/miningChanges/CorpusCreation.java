@@ -22,7 +22,7 @@ public class CorpusCreation {
 	public static String loc = main.Main.settings.get("workingLoc");
 	public static String repo = main.Main.settings.get("repoDir");
 	public static HashSet<String> concernedCommits;
-	public static HashMap<String,String> changeMap;
+	public static HashSet<String> changeMap;
 	public static HashMap<String,Integer> sourceFileIndex;
 	
 	public static void getCommitsOneLine() throws Exception{
@@ -176,16 +176,15 @@ public class CorpusCreation {
 			count++;
 			//System.out.println(count + ":" + concernedCommits.size());
 			
-			if (!changeMap.containsKey(hash)) continue;
+			if (!changeMap.contains(hash)) continue;
 			//System.out.println(fullHash);
 			// adaptpr for project ChangeLocator
 			
-			String fullHash = changeMap.get(hash);
-            String parentPath = revisionLoc + File.separator + fullHash.substring(0,2)+ File.separator +fullHash.substring(2,4);
-			String commitFile = parentPath + File.separator + fullHash + ".txt";
+            String parentPath = revisionLoc + File.separator + hash.substring(0,2)+ File.separator +hash.substring(2,4);
+			String commitFile = parentPath + File.separator + hash + ".txt";
 
 			file = new File(parentPath);
-            if (!file.exists()) file.mkdir();
+            if (!file.exists()) file.mkdirs();
 			
 			file = new File(commitFile);
 			if (!file.exists() || file.length() == 0) {
