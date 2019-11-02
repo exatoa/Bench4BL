@@ -5,13 +5,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 
 public class ChangeLocator {
-	public static HashMap<String,String> shortChangeMap = null;
+	public static HashSet<String> shortChangeMap = null;
 	
-	public static HashMap<String,String> getShortChangeMap() {
+	public static HashSet<String> getShortChangeMap() {
 		if (shortChangeMap == null) {
 			shortChangeMap = readShortChangeMap();
 		} 
@@ -30,12 +31,12 @@ public class ChangeLocator {
 		return changeTime;
 	}
 	
-	public static HashMap<String,String> readShortChangeMap() {
-		HashMap<String,String> changeMap = new HashMap<String,String>();
+	public static HashSet<String> readShortChangeMap() {
+		HashSet<String> changeMap = new HashSet<String>();
 		List<String> lines = FileToLines.fileToLines(main.Main.settings.get("workingLoc") + File.separator + "logOneline.txt");
 		for (String line : lines) {
 			String[] split = line.split("\t");
-			changeMap.put(split[0].substring(0, 7), split[0]);
+			changeMap.add(split[0]);
 		}
 		return changeMap;
 	}

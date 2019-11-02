@@ -14,6 +14,7 @@ public class EvaluationMetric {
 			if (ranks.get(i).size() > 0)
 				size++;
 		}
+		if (size == 0) return 0;
 		return ans / size;
 	}
 	
@@ -43,6 +44,7 @@ public class EvaluationMetric {
 			if (ranks.get(i).size() > 0)
 				size++;
 		}
+		if (size == 0) return 0;
 		return ans / size;
 	}
 	
@@ -71,6 +73,7 @@ public class EvaluationMetric {
 				}
 			}
 		}
+		if (size == 0) size = 1; // to avoid NaN score
 		int tot = 0;
 		for (int i = 0; i < N; i++) {
 			results[i] = (rank[i] + tot) * 1.0 / size;

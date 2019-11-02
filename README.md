@@ -225,14 +225,11 @@ The script basically works for the multiple versions of bug repository and each 
 ### Install Java
 All previous techniques are executed in Java Runtime Environment. If you have java in your computer, please skip this section.
 
-> $ sudo apt-get install python-software-properties <br />	
-> $ sudo add-apt-repository ppa:webupd8team/java <br />	
-> $ sudo apt-get update <br />
-> $ sudo apt-get install openjdk-8-jre-headless <br />
+> $ sudo apt install openjdk-11-jre-headless <br />
 
 ### Install indri
 - To execute BLUiR and AmaLgam, you need to install indri.
-- Since there are compile problems, we chose indri-5.6 version.
+- indri-5.15 can work.
 - In the installing process, please memorize the path in the first line in the "make install" log. <br />
 (In my case, /usr/local/bin.  This is the installed path of indri)
 - And then, Change Settings.txt file.
@@ -240,15 +237,15 @@ All previous techniques are executed in Java Runtime Environment. If you have ja
 > // Install g++ and make for indri <br />
 > $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test <br />
 > $ sudo apt-get update <br />
-> $ sudo apt-get install g++ <br />
+> $ sudo apt-get install gcc-6 g++-6 <br />
 > $ sudo apt-get install make <br />
 > $ sudo apt-get install --reinstall zlibc zlib1g zlib1g-dev <br />
 > <br />
 > // download and install indri (If you faced an error in the compiling, please try with another version.)<br />
-> $ wget https://downloads.sourceforge.net/project/lemur/lemur/indri-5.6/indri-5.6.tar.gz <br />
-> $ tar -xzf indri-5.6.tar.gz <br />
-> $ cd indri-5.6 <br />
-> $ ./configure <br />
+> $ wget https://downloads.sourceforge.net/project/lemur/files/lemur/indri-5.15/indri-5.15.tar.gz <br />
+> $ tar -xzf indri-5.15.tar.gz <br />
+> $ cd indri-5.15 <br />
+> $ ./configure CC=gcc-6 CXX=g++-6<br />
 > $ make <br />
 > $ sudo make install <br />
 >    /usr/bin/install -c -m 755 -d /usr/local/bin <br />
@@ -299,11 +296,7 @@ So, If you want to load these techniques on Eclipse, please follow next sequence
  - Make a 'techniques' folder into workplace of Eclipse. Then .metadata folder will be created in 'techniques' folder.
  - On the 'Package Explorer' panel, Open context menu by clicking right mouse button.
  - Select 'Import', Then a pop-up windows will be placed.
- - Except BLUiR project,  choose 'General > Projects from Folder or Archive' item and click 'Next' button.
- - Designate project folder in 'techniques' and click 'Finish' button.
- - Then, the project will be loaded and be shown in the Package Explorer.
- - BLUiR is made as Maven project. So, You should import with 'Maven > Existing Maven Project'. And then, just choose project folder. You don't need to change any other options.
- - Especially BLIA project, need to add library JUnit.
+ - All techniques are made as Maven project. So, You should import with 'Maven > Existing Maven Project'. And then, just choose project folder. You don't need to change any other options.
 
 
 
