@@ -30,12 +30,12 @@ public class CodeRepository {
 	public static ArrayList<CommitItem> commits = null;
 	
 	/**
-	 * »ý¼ºÀÚ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	public CodeRepository(){}
 	
 	/**
-	 * git repository·ÎºÎÅÍ commitµéÀ» ·Îµå.
+	 * git repositoryï¿½Îºï¿½ï¿½ï¿½ commitï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½.
 	 */
 	public boolean loadCommits(){
 	
@@ -63,7 +63,7 @@ public class CodeRepository {
 	}
 	
 	/**
-	 * »ý¼ºµÈ ·Î±×ÆÄÀÏÀ» ÆÄ½Ì
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ä½ï¿½
 	 * @param logFilePath
 	 * @return
 	 */
@@ -103,7 +103,7 @@ public class CodeRepository {
 
 
 	/**
-	 * commit log ÆÄÀÏ·Î ºÎÅÍ ÇÑ °³ÀÇ commit itemÀ» ÀÐ¾î¿È.
+	 * commit log ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ commit itemï¿½ï¿½ ï¿½Ð¾ï¿½ï¿½.
 	 * @param reader
 	 * @param repo_path
 	 * @return
@@ -124,10 +124,10 @@ public class CodeRepository {
 				break;
 			}
 				
-			//¿¹¿ÜÃ³¸®
+			//ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½
 			line = line.trim();
-			if (line.equals("")) continue;						//°ø¹éÀÎ °æ¿ì ´ÙÀ½¶óÀÎÀ¸·Î.
-			if (line.compareTo(commit_split)==0) break;	//ºÐ¸®ÀÚ Ã³¸® (µîÀåÇÏ¸é ´ÙÀ½À¸·Î ³Ñ¾î°¨)
+			if (line.equals("")) continue;						//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+			if (line.compareTo(commit_split)==0) break;	//ï¿½Ð¸ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¨)
 			
 			
 			// get commit date
@@ -162,10 +162,10 @@ public class CodeRepository {
 			}
 		}		
 		
-		//ÁËÁ¾ Á¾·á Ã¼Å©.
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¼Å©.
 		if (endFlag==true && item.hash == "")	return null;
 		
-		//¹ö±×°¡ ¾Æ´Ñ °æ¿ì¿¡ ¹«½ÃÇÏµµ·Ï ÇÔ.
+		//ï¿½ï¿½ï¿½×°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ì¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½.
 		if (!isBug(item.comment))	item.hash = "";
 		
 		return item;
@@ -173,9 +173,9 @@ public class CodeRepository {
 
 	
 	/**
-	 * ÀÔ·ÂµÈ comment°¡ bug¼öÁ¤¿¡ ´ëÇÑ commentÀÎÁö È®ÀÎ 
-	 * @param comment : ÀÔ·Â comment
-	 * @param regex : ¹ö±×¸¦ ÆÇ´ÜÇÒ Á¤±Ô½Ä.
+	 * ï¿½Ô·Âµï¿½ commentï¿½ï¿½ bugï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ commentï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ 
+	 * @param comment : ï¿½Ô·ï¿½ comment
+	 * @param regex : ï¿½ï¿½ï¿½×¸ï¿½ ï¿½Ç´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô½ï¿½.
 	 * @return
 	 */
 	private boolean isBug(String comment) {
@@ -188,9 +188,9 @@ public class CodeRepository {
 
 	
 	/**
-	 * ÀÔ·ÂµÈ ÆÄÀÏÀÇ FullClassNameÃßÃâ
-	 * ÆÄÀÏ ³»¿¡ ÁöÁ¤µÈ packageName + FileNameÀ¸·Î »ý¼º
-	 * (ÆÄÀÏ¿¡ ÇÑ°³ÀÇ Å¬·¡½º¸¸ ÀÖ¾î¾ß µÇ°Ù´Âµ¥....)
+	 * ï¿½Ô·Âµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ FullClassNameï¿½ï¿½ï¿½ï¿½
+	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ packageName + FileNameï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	 * (ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ ï¿½Ç°Ù´Âµï¿½....)
 	 * Deprecated
 	 * @param path
 	 * @return
@@ -229,10 +229,10 @@ public class CodeRepository {
 
 	
 	/**
-	 * °¡°øµÈ git ·Î±× ÆÄÀÏ¿¡¼­ Á¤º¸¸¦ ÃßÃâÇÏ¿©
-	 * °¢ ÆÄÀÏ Å¬·¡½º º°·Î ¼öÁ¤µÈ ³¯Â¥ Á¤º¸ ¼öÁý
-	 * (ÇÑ°³ÀÇ logsÆÄÀÏ¿¡ ´ëÇØ¼­ Ã³¸®°¡´ÉÇÏµµ·Ï ¼öÁ¤. by Zeck)
-	 * @param logFilePath ·ÎµåÇÒ µ¥ÀÌÅÍ¸¦ ´ã°í ÀÖ´Â ·Î±×ÆÄÀÏ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ git ï¿½Î±ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½
+	 * ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	 * (ï¿½Ñ°ï¿½ï¿½ï¿½ logsï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. by Zeck)
+	 * @param logFilePath ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param bugs
 	 * @return
 	 * @throws IOException 
@@ -252,7 +252,7 @@ public class CodeRepository {
 				fullClassName = Utils.getUniqueClassName(item.files.get(j));
 				int fid = FileObjs.put(fullClassName);
 				
-				if (!fileHistories.containsKey(fullClassName)) {
+				if (!fileHistories.containsKey(fid)) {
 					HashSet<CommitItem> histories = new HashSet<CommitItem>();
 					histories.add(item);
 					
@@ -266,7 +266,7 @@ public class CodeRepository {
 	}
 	
 	/**
-	 * LogÁ¤º¸·ÎºÎÅÍ commit Date Á¤º¸µé ¾òÀ½.  (Hash, Date)
+	 * Logï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ commit Date ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.  (Hash, Date)
 	 * @return
 	 */
 	public HashMap<String, Date> getCommitDates() {
@@ -278,12 +278,12 @@ public class CodeRepository {
 	}
 
 	/**
-	 * commit log Á¤º¸¸¦ ºÐ¼®ÇÏ¿© bugObjs¿¡ commit date¸¦ ÀÔ·Â
-	 * @param bugObjs : ´ë»ó bugs
+	 * commit log ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð¼ï¿½ï¿½Ï¿ï¿½ bugObjsï¿½ï¿½ commit dateï¿½ï¿½ ï¿½Ô·ï¿½
+	 * @param bugObjs : ï¿½ï¿½ï¿½ bugs
 	 */
 	public void getCommitDateOfBugObj(HashMap<String, Bug> bugObjs) 
 	{
-		// ¸ðµç Ä¿¹Ô¿¡ ´ëÇØ¼­
+		// ï¿½ï¿½ï¿½ Ä¿ï¿½Ô¿ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½
 		for (CommitItem item : commits)	
 		{	
 			// check if message contain the bugid
@@ -291,10 +291,10 @@ public class CodeRepository {
 			int curIndex = 10000;
 			String currentBugid = null;
 			
-			//¸ðµç ¹ö±×µéÀ» ´ë»óÀ¸·Î È®ÀÎ. (comment Á¤º¸¿¡ bugID°¡ Æ÷ÇÔµÇ¾îÀÖ´ÂÁö È®ÀÎ)
-			for (Bug bug : bugObjs.values()) 	//¹ö±×¾ÆÀÌµðµéÀ» ´ë»óÀ¸·Î
+			//ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½×µï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½. (comment ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ bugIDï¿½ï¿½ ï¿½ï¿½ï¿½ÔµÇ¾ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½)
+			for (Bug bug : bugObjs.values()) 	//ï¿½ï¿½ï¿½×¾ï¿½ï¿½Ìµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			{
-				//ÇÑ Ä¿¹Ô¿¡ ¿©·¯ ¹ö±× ¾ÆÀÌµð°¡ Á¸ÀçÇÏ´Â °æ¿ì, °¡Àå ¾Õ¿¡ µîÀåÇÑ ¹ö±× ¾ÆÀÌµð¸¦ Ä¿¹ÔÀÇ ¹ö±×¾ÆÀÌµð·Î °áÁ¤
+				//ï¿½ï¿½ Ä¿ï¿½Ô¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½Õ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½×¾ï¿½ï¿½Ìµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				if (item.comment.contains(bug.ID + " ")) {
 					int index = item.comment.indexOf(bug.ID);
 					if (index < curIndex) {	
