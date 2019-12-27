@@ -151,7 +151,7 @@ We have 8 dependencies below:
 
 You can install using following commnad.
 > $ sudo pip install --upgrade pip <br />
-> $ pip install numpy scipy matplotlib pytz GitPython bs4 xlswriter python-dateutil<br />
+> $ pip install numpy scipy matplotlib pytz GitPython bs4 XlsxWriter python-dateutil<br />
 > or<br />
 > $ pip install -r scripts/requirements.txt<br />
 > we serve the requirements file.<br />
