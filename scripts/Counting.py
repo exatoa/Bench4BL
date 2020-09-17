@@ -37,6 +37,7 @@ class Counting(object):
 				bugs.append(int(tag.attrib['id']))
 
 		except Exception as e:
+			print(str(e))
 			return None
 		return bugs
 

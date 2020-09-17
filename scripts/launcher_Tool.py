@@ -30,8 +30,8 @@ class Launcher(object):
 	'''
 
 	ProgramNames = [u'BugLocator',  u'BRTracer', u'BLUiR', u'AmaLgam',  u'BLIA', u'Locus']
-	ProgramPATH = u'/mnt/exp/Bench4BL/techniques/releases/'
-	OutputPATH = u'/mnt/exp/Bench4BL/expresults/'
+	ProgramPATH = u'/home/ubuntu/d/Bench4BL/techniques/releases/'
+	OutputPATH = u'/home/ubuntu/d/Bench4BL/expresults/'
 	JavaOptions = u'-Xms512m -Xmx4000m'
 	JavaOptions_Locus = u'-Xms512m -Xmx10000m'
 	TYPE = u'Test'

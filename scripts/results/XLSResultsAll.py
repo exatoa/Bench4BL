@@ -70,7 +70,7 @@ class XLSResultAll(XLSbasic):
 
 		for bugID in data_keys:
 			AP = _bugData[bugID].AP
-			count = _ansCounts[bugID]
+			count = _ansCounts[bugID] if bugID in _ansCounts else 1
 
 			for this in _rawData[bugID]:			# for each bug id's results
 				vname = this.version
@@ -125,7 +125,7 @@ class XLSResultAll(XLSbasic):
 
 		for bugID in data_keys:
 			this = _bugData[bugID]			# for each bug id's results
-			count = _ansCounts[this.id]
+			count = _ansCounts[this.id] if this.id in _ansCounts else 1
 			key = u'%s%d'%(_project.lower(),this.id)
 			values = [key, _program, _group, _project, this.id, this.version, count, this.top1, this.top5, this.top10, this.AP, this.TP]
 
@@ -415,7 +415,7 @@ class XLSResultAll(XLSbasic):
 				                       self.S.bugs[project],
 				                       len(self.S.duplicates[project]))
 
-				for tech in ['Locus']:#self.S.techniques: #['BLIA']:#  ['BugLocator', "BRTracer", 'BLUiR', 'BLIA']:#, 'Locus']:#
+				for tech in ['BugLocator']:#, 'Locus']:#
 					print(tech + u' ', end=u'')
 					self.append_project(group, project, tech, _isUnion)
 				print(u' Done')
@@ -427,7 +427,7 @@ class XLSResultAll(XLSbasic):
 ###############################################################################################################
 ###############################################################################################################
 if __name__ == "__main__":
-	name = u'ISSTASingle'
+	name = u'Test'
 	obj = XLSResultAll(u'/mnt/exp/Bench4BL/expresults/Result_%s.xlsx' % name)
 	obj.run(name, _isUnion=True)
 

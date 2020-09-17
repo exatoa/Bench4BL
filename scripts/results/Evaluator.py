@@ -72,7 +72,11 @@ class Evaluator():
 			# item.top1 = 1 if item.top1 >= 1 else 0
 			# item.top5 = 1 if item.top5 >= 1 else 0
 			# item.top10 = 1 if item.top10 >= 1 else 0
-			item.AP = item.AP / _ansCnts[bugID]   #len(self.rawData[bugID])
+			if bugID not in _ansCnts or _ansCnts[bugID] == 0:
+				print("[%s] Cannot find this %d" % (self.project, bugID))
+				item.AP = 0
+			else:
+				item.AP = item.AP / _ansCnts[bugID]   #len(self.rawData[bugID])
 			self.bugSummaries[bugID] = item
 
 		# evaluate
